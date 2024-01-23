@@ -5,7 +5,7 @@ You can run this code on your own machine or on Google Colab. We recommend Pytho
 1. **Local option:** If you choose to run locally, you will need to install MuJoCo and some Python packages; see [installation.md](installation.md) for instructions.
 2. **Colab:** The first few sections of the notebook will install all required dependencies. You can try out the Colab option by clicking the badge below:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmuroboticsdrl/16831_F23_HW/blob/main/hw1/rob831/scripts/run_hw1.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/LeCAR-Lab/16831-S24-HW/blob/main/hw1/rob831/scripts/run_hw1.ipynb)
 
 
 ## Complete the code
@@ -36,8 +36,8 @@ Command for problem 1:
 ```
 python rob831/scripts/run_hw1.py \
 	--expert_policy_file rob831/policies/experts/Ant.pkl \
-	--env_name Ant-v4 --exp_name bc_ant --n_iter 1 \
-	--expert_data rob831/expert_data/expert_data_Ant-v4.pkl
+	--env_name Ant-v2 --exp_name bc_ant --n_iter 1 \
+	--expert_data rob831/expert_data/expert_data_Ant-v2.pkl
 	--video_log_freq -1
 ```
 
@@ -52,8 +52,8 @@ Command for section 1:
 ```
 python rob831/scripts/run_hw1.py \
     --expert_policy_file rob831/policies/experts/Ant.pkl \
-    --env_name Ant-v4 --exp_name dagger_ant --n_iter 10 \
-    --do_dagger --expert_data rob831/expert_data/expert_data_Ant-v4.pkl \
+    --env_name Ant-v2 --exp_name dagger_ant --n_iter 10 \
+    --do_dagger --expert_data rob831/expert_data/expert_data_Ant-v2.pkl \
 	--video_log_freq -1
 ```
 

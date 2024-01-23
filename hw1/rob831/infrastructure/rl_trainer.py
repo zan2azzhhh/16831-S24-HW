@@ -17,7 +17,7 @@ MAX_NVIDEO = 2
 
 def make_env(env_name):
     if env_name == 'Ant-v2':
-        return gym.make(env_name, use_contact_forces=True)
+        return gym.make(env_name)
     else:
         return gym.make(env_name)
 
